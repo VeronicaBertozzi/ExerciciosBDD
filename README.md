@@ -5,7 +5,7 @@
 Acessar o site da Gama Academy e navegar pelo site
 
 **Cenario:** Acessar o site da Gama Academy<br>
-    Dado que eu acesso o site da Gama Academy "https://www.gama.academy"
+    Dado que eu acesso o site da Gama Academy "https://www.gama.academy"<br>
     E clico para fechar propaganda<br>
     E clico na opcao quem somos<br>
     Entao devo ver o intem do "MANIFESTO"<br>
