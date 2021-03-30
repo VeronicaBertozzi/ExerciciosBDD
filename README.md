@@ -5,7 +5,7 @@
 Acessar o site da Gama Academy e navegar pelo site
 
 **Cenario:** Acessar o site da Gama Academy<br>
-    Dado que eu acesso o site da Gama Academy "https://www.gama.academy"<br>  
+    Dado que eu acesso o site da Gama Academy "https://www.gama.academy"
     E clico para fechar propaganda<br>
     E clico na opcao quem somos<br>
     Entao devo ver o intem do "MANIFESTO"<br>
@@ -23,24 +23,24 @@ Acessar o site da gama academy e navegar pelo site
     E clico para fechar propaganda
     E clico no botao dev fullstack 
     Entao devo ver as opcoes
-- [x]|Crie seu portfólio!|
-- [x]|Acompanhamento de Carreira|
-- [x]|Professores de surf que sabem surfar!|
-- [x]|Estude na Melhor Startup de Educação|
+- [x] |Crie seu portfólio!|
+- [x] |Acompanhamento de Carreira|
+- [x] |Professores de surf que sabem surfar!|
+- [x] |Estude na Melhor Startup de Educação|
 		
 ---------------------------------------------------------------------------
 
 ## Tecnologias utilizadas
-- [x] Java
+:white_check_mark: Java
 Linguagem de programação para desenvolvimento da aplicação
 
-- [x] Maven
+:white_check_mark: Maven
 Gerenciador de dependências para o Java
 
-- [x] Cucumber
+:white_check_mark: Cucumber
 Framework responsável por traduzir uma linguagem humana em código Java
 
-- [x] Selenium
+:white_check_mark: Selenium
 Framework responsável por fazer a integração do código java com a linguagem Gherkin(Cucumber) abrindo o browser fazendo o teste de comportamento
 
 -----------------------------------------------------------------------------
