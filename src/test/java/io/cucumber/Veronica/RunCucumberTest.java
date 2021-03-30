@@ -1,4 +1,4 @@
-package io.cucumber.danilo;
+package io.cucumber.Veronica;
 
 import io.cucumber.junit.CucumberOptions;
 import io.cucumber.junit.Cucumber;

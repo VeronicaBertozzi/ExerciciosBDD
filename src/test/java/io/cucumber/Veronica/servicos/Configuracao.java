@@ -1,6 +1,10 @@
-package io.cucumber.danilo.servicos;
+package io.cucumber.Veronica.servicos;
 
+import java.util.List;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 //todos os testes que estao em comum colocar aqui
@@ -13,8 +17,13 @@ public class Configuracao {
     public static void abrir(String url){
         //se o meu objeto browser for igual a nulo vai setar o meu item e vai criar uma instancia se nao so vou usar ele 
         if(browser == null){
-            System.setProperty("webdriver.chrome.driver", "driver/chromedriver.exe");
-	        browser = new ChromeDriver();
+            try {
+                System.setProperty("webdriver.chrome.driver", "driver/chromedriver.exe");
+                browser = new ChromeDriver();
+              } catch (Exception e) {
+                System.setProperty("webdriver.chrome.driver", "driver/chromedriver");
+                browser = new ChromeDriver();
+              }
         }
 
         browser.get(url);
@@ -26,6 +35,11 @@ public class Configuracao {
         browser = null;
     }
 
-    public static void seletorQueryCssTodos(String string) {
-    }
+    public static WebElement cssSelector(String selector) {
+		return browser.findElement(By.cssSelector(selector));
+	}
+	
+	public static List<WebElement> cssSelectors(String selector) {
+		return browser.findElements(By.cssSelector(selector));
+	}
 }

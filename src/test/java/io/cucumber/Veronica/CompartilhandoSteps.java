@@ -1,9 +1,7 @@
-package io.cucumber.danilo;
+package io.cucumber.Veronica;
 
-import org.openqa.selenium.By;
-
-import io.cucumber.danilo.servicos.Configuracao;
-import io.cucumber.java.pt.Dado;
+import io.cucumber.Veronica.servicos.Configuracao;
+import io.cucumber.java.pt.*;
 
 public class CompartilhandoSteps {
         
@@ -15,6 +13,6 @@ public class CompartilhandoSteps {
     @Dado("clico para fechar propaganda")
     public void clico_para_fechar_propaganda() throws InterruptedException{
         Thread.sleep(5000);
-        Configuracao.browser.findElement(By.cssSelector(".ub-emb-close")).click();
+        Configuracao.cssSelector(".ub-emb-close").click();
     }
 }
