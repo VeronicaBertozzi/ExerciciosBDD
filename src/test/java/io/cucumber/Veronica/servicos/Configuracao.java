@@ -34,4 +34,8 @@ public class Configuracao {
     public static WebElement cssSelector(String selector) {
 		return browser.findElement(By.cssSelector(selector));
 	}
+	
+	public static List<WebElement> cssSelectors(String selector) {
+		return browser.findElements(By.cssSelector(selector));
+	}
 }
