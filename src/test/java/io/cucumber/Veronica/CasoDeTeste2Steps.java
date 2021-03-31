@@ -3,7 +3,6 @@ package io.cucumber.Veronica;
 import io.cucumber.Veronica.servicos.Configuracao;
 
 import static org.junit.Assert.assertEquals;
-import java.util.List;
 import io.cucumber.java.pt.*;
 
 public class CasoDeTeste2Steps {
@@ -19,14 +18,4 @@ public class CasoDeTeste2Steps {
         Configuracao.fechar();
     }
 
-    @Dado("clico no botao dev fullstack")
-    public void clico_no_botao_dev_fullstack() {
-        Configuracao.cssSelector("a[class='bt-chamada btc-alt w-button']").click();
-    }
-
-    @Entao("devo ver as opcoes")
-    public void devo_ver_as_opcoes(List<String> valores) {
-        assertEquals(valores.toString(), "["+Configuracao.cssSelectors(".heading-18").get(1).getText().replace("\n", ", ")+"]");
-        Configuracao.fechar();
-    }
 }

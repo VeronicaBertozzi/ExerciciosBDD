@@ -1,5 +1,5 @@
 #language: pt
-
+@ignore
 Funcionalidade: Acessando o site Gama Academy
     Acessar o site da Gama Academy e navegar pelo site
 

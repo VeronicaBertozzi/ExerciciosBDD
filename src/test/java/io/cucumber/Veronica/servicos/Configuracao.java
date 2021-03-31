@@ -17,16 +17,12 @@ public class Configuracao {
     public static void abrir(String url){
         //se o meu objeto browser for igual a nulo vai setar o meu item e vai criar uma instancia se nao so vou usar ele 
         if(browser == null){
-            try {
-                System.setProperty("webdriver.chrome.driver", "driver/chromedriver.exe");
-                browser = new ChromeDriver();
-              } catch (Exception e) {
-                System.setProperty("webdriver.chrome.driver", "driver/chromedriver");
-                browser = new ChromeDriver();
-              }
+            System.setProperty("webdriver.chrome.driver", "driver/chromedriver.exe");
+            browser = new ChromeDriver();
         }
 
         browser.get(url);
+        browser.manage().window().maximize();
     }
 
     //metodo para fechar o navegador
@@ -37,9 +33,5 @@ public class Configuracao {
 
     public static WebElement cssSelector(String selector) {
 		return browser.findElement(By.cssSelector(selector));
-	}
-	
-	public static List<WebElement> cssSelectors(String selector) {
-		return browser.findElements(By.cssSelector(selector));
 	}
 }
